@@ -1,0 +1,132 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para os títulos */
+h1 {
+    color: #333;
+}
+
+/* Estilos para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para formulários */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para lista de usuários */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+ul li a {
+    color: #007bff;
+    margin-left: 10px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para botões de ação (editar e excluir) */
+.action-buttons {
+    margin-top: 10px;
+}
+
+.action-buttons button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.action-buttons button.edit {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.action-buttons button.delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.action-buttons button:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para links de navegação */
+.nav-links {
+    margin-top: 20px;
+}
+
+.nav-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+}

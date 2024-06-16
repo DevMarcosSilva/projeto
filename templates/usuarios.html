@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <ul>
+        {% for usuario in usuarios %}
+        <li>
+            {{ usuario['primeiro_nome'] }} {{ usuario['ultimo_nome'] }} - {{ usuario['idade'] }} - {{ usuario['email'] }} - {{ usuario['endereco'] }} - {{ usuario['setor'] }}
+            <a href="{{ url_for('editar_usuario', user_id=usuario['id']) }}">Editar</a>
+            <form action="{{ url_for('excluir_usuario', user_id=usuario['id']) }}" method="post" style="display:inline;">
+                <button type="submit">Excluir</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Voltar</a>
+</body>
+</html>
